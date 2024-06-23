@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+    .header {
+        color: black;
+        padding: 10px 0;
+        font-size: 24px;
+    }
+    .container {
+            padding: 20px;
+        }
+    .search-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .search-container input {
+        padding: 10px;
+        width: 60%;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .categories {
+        display: flex;
+        justify-content: space-between;
+    }
+    .category {
+        padding: 10px 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .category.selected {
+        font-weight: bold;
+        background-color: #e0e0e0;
+    }
+    .user-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .user-box {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background-color: white;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        flex: 1 1 calc(33.333% - 10px);
+        box-sizing: border-box;
+    }
+    .user-box img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+    .user-box .name {
+        font-size: 18px;
+    }
+</style>
+<body>
+    <h1 class="header">User</h1>
+    <div class="container">
+        <div class="search-container">
+            
+            <i class="fa fa-search"><input type="text" placeholder="Search..."></i>
+            <div class="categories">
+                <div class="category">Reputation</div>
+                <div class="category selected">New Users</div>
+                <div class="category">Voters</div>
+                <div class="category">Editors</div>
+                <div class="category">Moderators</div>
+            </div>
+        </div>
+        <div class="user-grid">
+            <div class="user-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDdGg3n4Us56vezmAP4MS_356skA2WwVSmFw&s" alt="User 1">
+                <div class="name">User 1</div>
+            </div>
+            <div class="user-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDdGg3n4Us56vezmAP4MS_356skA2WwVSmFw&s" alt="User 2">
+                <div class="name">User 2</div>
+            </div>
+            <div class="user-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDdGg3n4Us56vezmAP4MS_356skA2WwVSmFw&s" alt="User 3">
+                <div class="name">User 3</div>
+            </div>
+            <div class="user-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDdGg3n4Us56vezmAP4MS_356skA2WwVSmFw&s" alt="User 4">
+                <div class="name">User 4</div>
+            </div>
+            <div class="user-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDdGg3n4Us56vezmAP4MS_356skA2WwVSmFw&s" alt="User 5">
+                <div class="name">User 5</div>
+            </div>
+            <div class="user-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDdGg3n4Us56vezmAP4MS_356skA2WwVSmFw&s" alt="User 6">
+                <div class="name">User 6</div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

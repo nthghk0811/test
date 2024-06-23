@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form id="Form">
+            <label for="a">Nhap so a:</label>
+            <input type="number" id="a" name="a" required>
+            <label for="b">Nhap so b:</label>
+            <input type="number" id="b" name="b" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script>
+        
+        document.getElementById('Form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const a = parseInt(document.getElementById('a').value);
+            const b = parseInt(document.getElementById('b').value);
+            const res = document.getElementById('result');
+            res.textContent = '';
+
+            
+
+            function snt(n) {
+                if (n <2) return false;
+            
+                for (let i = 2; i < (Math.sqrt(n) + 1) ; i += 1) {
+                    if (n % i === 0) return false;
+                }
+                return true;
+            }
+
+            function tong(a, b) {
+                let sum = 0;
+                for (let i = a; i <= b; i++) {
+                    if (snt(i)) {
+                        sum += i;
+                    }
+                }
+                return sum;
+            }
+            res.textContent = tong(a,b);
+        });
+    </script>
+</body>
+</html>
